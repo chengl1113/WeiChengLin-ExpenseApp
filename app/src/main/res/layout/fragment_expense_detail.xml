@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/expense_title_label"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/expense_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/expense_title_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/expense_details_label"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/expense_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Wed May 11 11:56 EST 2022" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/expense_amount_header"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/expense_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/expense_amount_hin"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/expense_category_header"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/expense_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+</LinearLayout>
